@@ -1,0 +1,8 @@
+.form-item-error{
+  border:2px solid red !important;
+}
+
+.form-item-warn{
+  border:2px solid yellow !important;
+}
+
