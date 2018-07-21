@@ -16,7 +16,7 @@ export default function postReducer(state = [], action) {
     case UPDATE_POST:
     debugger;
       state.forEach((item, i) => {
-        if (item._id == action.payload._id) state[i] = action.payload;
+        if (item._id === action.payload._id) state[i] = action.payload;
       })
       return state;
     default:
