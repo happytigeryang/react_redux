@@ -13,7 +13,6 @@ export default class NewPost extends Component {
 
   validationForm=((e)=>
   {
-    debugger;
     if(this.state.formError && e.target.value&&e.target.value.length>10) return false;
     if(e.target.value&&e.target.value.length>10)
     {
