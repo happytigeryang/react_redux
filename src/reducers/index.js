@@ -2,8 +2,8 @@ import { combineReducers } from "redux";
 
 import { routerReducer } from "react-router-redux";
 
-import posts from "./postProducer";
-import auth from "./authRducer";
+import posts from "./postReducer";
+import auth from "./authReducer";
 
 export default combineReducers({
   posts,

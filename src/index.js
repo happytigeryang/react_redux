@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import logger from 'redux-logger'
+import promiseMiddleware from 'redux-promise-middleware'
+
 //redux
 import { createStore, applyMiddleware } from "redux";
 import ReduxThunk from "redux-thunk";
@@ -26,7 +29,7 @@ const routeMiddleware = routerMiddleware(history);
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(routeMiddleware, ReduxThunk)
+  applyMiddleware(routeMiddleware, ReduxThunk,promiseMiddleware(),logger)
 );
 
 store.dispatch(fetchAllPosts());
