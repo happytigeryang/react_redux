@@ -21,6 +21,7 @@ import App from "./App";
 import About from "./components/About";
 import rootReducer from "./reducers";
 import { fetchAllPosts } from "./actions/index";
+import { Button } from 'antd';
 
 import registerServiceWorker from "./registerServiceWorker";
 
@@ -41,6 +42,7 @@ ReactDOM.render(
         <Route exact path="/" component={App} />
         <Route exact path="/Home" component={App} />
         <Route exact path="/about" component={About} />
+        <Button type="primary">Button</Button>
       </div>
     </ConnectedRouter>
   </Provider>,
