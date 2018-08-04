@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from 'antd';
 
 import handleChange from "../utils/mixins/handleChange";
 // import {createPost} from '../actions';
@@ -71,16 +72,15 @@ export default class NewPost extends Component {
             />
           </div>
           <div className="form-group">
-            <button type="submit" className="btn btn-primary">
+            <Button type="primary" htmlType="submit">
               Add Post
-            </button>&nbsp;&nbsp;
-            <button
-              type="button"
-              className="btn btn-warning"
+            </Button>&nbsp;&nbsp;
+            <Button
+              type="default"
               onClick={this.handleReset}
             >
               Reset
-            </button>
+            </Button>
           </div>
         </form>
       </div>
